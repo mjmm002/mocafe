@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <script src="https://kit.fontawesome.com/dacf65b492.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,19 +19,16 @@
       <i class="fa-solid fa-bars" id="menuToggle"></i>
     <a href="#" class="logo"><img src="images/logo.png"></a>
       <div id="nav-group">
-        
         <ul class="navigation">
-        <li><a href="#home">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="index.html#about">ABOUT</a></li>
         <li><a href="menu.html">MENU</a></li>
         <!-- <li><a href="rewards.html">REWARDS</a></li> -->
-        <li><a href="#contact">CONTACT</a></li>
+        <li><a href="index.html#contact">CONTACT</a></li>
         <li><a href="login.html">LOGIN</a></li>
         </ul>
       </div>
-    
-      <button class="me-3" data-bs-toggle="modal" data-bs-target="#cartModal">Cart <i class="fa-solid fa-cart-shopping"></i></button>  
-
+      <button class="me-3"><i class="fa-solid fa-cart-shopping"></i></button>   
     </header>
 
 
@@ -39,7 +37,7 @@
             <div> 
                 <h1>Your Day Starts With Our Coffee</h1>
             </div>
-           
+      
             <div class="col-5">
             <p> Drinking coffee can do much more than provide an energy boost. Coffee is the biggest source of antioxidants in the diet. So find your new favorite. Always fresh coffee.</p>
             </div>
@@ -87,88 +85,57 @@
 <!-- GALLERY SECTION  -->
 <div id="myGallery" class="carousel slide carousel-fade carousel-dark" data-bs-ride="carousel">
   <ol class="carousel-indicators">
-      <li data-bs-target="#myGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="1" aria-label="Slide 2"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="2" aria-label="Slide 3"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="3" aria-label="Slide 4"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="4" aria-label="Slide 5"></li>    
-      <li data-bs-target="#myGallery" data-bs-slide-to="5" aria-label="Slide 6"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="6" aria-label="Slide 7"></li>
-      <li data-bs-target="#myGallery" data-bs-slide-to="7" aria-label="Slide 6"></li>
-      <!-- <li data-bs-target="#myGallery" data-bs-slide-to="8" aria-label="Slide 8"></li>    
-      <li data-bs-target="#myGallery" data-bs-slide-to="9" aria-label="Slide 9"></li>     -->
+      <li data-bs-target="#myGallery" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 0"></li>
+     <li data-bs-target="#myGallery" data-bs-slide-to="1" aria-label="Slide 1"></li>
+      <li data-bs-target="#myGallery" data-bs-slide-to="2" aria-label="Slide 2"></li>
+      <li data-bs-target="#myGallery" data-bs-slide-to="3" aria-label="Slide 3"></li>
+      <li data-bs-target="#myGallery" data-bs-slide-to="4" aria-label="Slide 4"></li>    
+      <li data-bs-target="#myGallery" data-bs-slide-to="5" aria-label="Slide 5"></li>
+ 
   </ol>
   <div class="carousel-inner">
       <div class="carousel-item active" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-1.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-1.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-1.jpg">
           </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-2.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-2.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-2.jpg">
           </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-3.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-3.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-3.jpg">
           </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-4.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-4.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-4.jpg">
           </div>
       </div>
       <div class="carousel-item" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-5.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-5.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-5.jpg">
           </div>
       </div>
        <div class="carousel-item" data-bs-interval="5000">
-          <div class="overlay-image" style="background-image:url(images/image-6.jpg) ;">
-          </div>
+          <!-- <div class="overlay-image" style="background-image:url(images/image-6.jpg) ;">
+          </div> -->
           <div class="container">
               <img src="images/image-6.jpg">
           </div>
       </div>
-      <!-- <div class="carousel-item" data-bs-interval="2000">
-          <div class="overlay-image" style="background-image:url(images/image-7.jpg) ;">
-          </div>
-          <div class="container">
-              <img src="images/image-7.jpg">
-          </div>
-      </div>
-      <div class="carousel-item" data-bs-interval="2000">
-          <div class="overlay-image" style="background-image:url(images/image-8.jpg) ;">
-          </div>
-          <div class="container">
-              <img src="images/image-8.jpg">
-          </div>
-      </div>
-      <div class="carousel-item">
-          <div class="overlay-image" style="background-image:url(/image-9.jpg) ;">
-          </div>          
-          <div class="container">
-              <img src="/image-9.jpg">
-          </div>
-      </div> 
-       <div class="carousel-item">
-          <div class="overlay-image" style="background-image:url(/image-10.jpg) ;">
-          </div>
-          <div class="container">
-              <img src="/image-10.jpg">
-          </div>
-      </div>  --> 
   </div>
 
   <a href="#myGallery" class="carousel-control-prev" role="button" data-bs-slide="prev">
@@ -185,18 +152,142 @@
 
 
 <!-- TESTIMONIAL SECTION  -->
-  <div class="d-flex flex-column justify-content-center align-items-center" id="testimonials">
-    <div>
-        <h2>TESTIMONIALS</h2>
+<div class="d-flex flex-column align-items-center mt-5" id="testimonials">
+<h1>TESTIMONIALS</h1>    
+<div class="slideContainer swiper">
+    <div class="slideContent">
+        <div class="cardWrap swiper-wrapper">
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-1.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">Fran Post - Pasay City</h2>
+                    <p class="testimony"> I have been a bit slack in the coffee ordering as of late...the other day my 17 year old got all over me saying, "stop buying average coffee just because you have coupons and get back to ordering the best coffee around from MOCAFE"...enough said :)
+                    </p>
+                    
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-2.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">Greg - Makati City</h2>
+                    <p class="testimony">Hi - I just had to write and I never do this. I just received my coffee order, brewed up a pot of your Caffe Americano and I am blown away. It’s so smooth, and delicious. That’s it… I am never buying a cup of Starbucks again. Now, I know what a truly great cup of coffee is supposed to taste like. Can’t wait to try some of your other blends. You have a convert for life!
+                    </p>
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-3.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">Sarah – Pasig City</h2>
+                    <p class="testimony">I received my order right on time, even after I called to change something. So nice these days to have such great customer service! Please compliment Kaye for her prompt and cheerful attention. I have a feeling I’ll be drinking only MOCAfé from now on.
+                    </p>
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-4.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">Jeff - Caloocan City</h2>
+                    <p class="testimony">I can’t believe I am saying this but your coffee is better than any other coffee shop. It is consistently rich, full bodied, and aromatic. That is really something to boast about. You definitely are on the cutting edge. Way to go MOCAfé!
+                    </p>
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-5.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">Jennifer - Valenzuela City</h2>
+                    <p class="testimony">Just tried you guys yesterday, and both drinks we tried were absolutely wonderful! I could tell just from taste that the coffee bean used were high quality.
+                    </p>
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+            <div class="card swiper-slide">
+                <div class="imageContent">
+                    <span class="overlay"></span>
+                    <div class="cardImage">
+                        <img src="images/testimonials pic/img-6.jpg" alt="" class="cardImg">
+                    </div>
+                </div>
+                <div class="cardContent">
+                    <h2 class="name">David - Mandaluyong City</h2>
+                    <p class="testimony">We love your coffee. It is better than any top brand, and we are coffee lovers. Thank you for such a quality coffee. Nothing holds a candle close to your brand</p>
+                    <!-- <button class="viewBtn">View More</button> -->
+                </div>
+            </div>
+        </div>
     </div>
-  </div>
+    <div class="swiper-button-next swiperBtn"></div>
+  <div class="swiper-button-prev swiperBtn"></div>
+  <div class="swiper-pagination"></div>
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
  
 
 
-<!-- CONTACT SECTION START -->
+<!--CONTACT SECTION-->
 <div class="d-flex flex-column justify-content-between align-items-center" id="contact">
  
     <div class="contact-header">
@@ -257,23 +348,22 @@
                 <p><input type="email" placeholder="Email Address" id="subscribe"><button>SUBSCRIBE</button></p>
             </div>
         </div>
-
-     
-
-
     </div>
 
+
+
+
     <div class="footer">
-        Copyright© 2022 MOCAFE All Rights Reserved
-        </div>
+            Copyright© 2022 MOCAFE All Rights Reserved
+    </div>
+
 </div>
 
 
 
 
-
-
-<script src="js/script.js"></script>
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/script2.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
 </body>
 </html>
