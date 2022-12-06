@@ -76,7 +76,7 @@
                         <span class="h5" id="cartTotal">P0.00</span>
                     </div>
                     <div class="d-flex justify-content-end my-sm-3">
-                        <button class="btn btn-primary col-3" id="btn-checkout" data-bs-toggle="modal" data-bs-target="#transactionType">
+                        <button class="btn col-3" id="btn-checkout" data-bs-toggle="modal" data-bs-target="#transactionType">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">Proceed <i class="fa-regular fa-circle-check ms-sm-1"></i></div>
                         </button>
                     </div>
@@ -108,11 +108,11 @@
                         <div class="row">
                             <span class="h5 col-12">Select how you would like to pick-up the order. *</span>
                             <input type="radio" class="btn-check col-4 me-1" name="pick-opt" id="insidestore" value="Inside store" autocomplete="off" checked onclick="pickupLocFunc()">
-                            <label class="btn btn-secondary col-4 me-1" for="insidestore">Inside store</label>
+                            <label class="btn col-4 me-1" for="insidestore">Inside store</label>
                             <input type="radio" class="btn-check col-4 me-1" name="pick-opt" id="curbside" value="Curbside pick-up point" autocomplete="off" onclick="pickupLocFunc()">
-                            <label class="btn btn-secondary col-4 me-1" for="curbside">Curbside pick-up point</label>
+                            <label class="btn col-4 me-1" for="curbside">Curbside pick-up point</label>
                             <span class="h5 col-12">Select date and time. *</span>
-                            <input type="datetime-local" class="form-control" id="DeliveryTime" placeholder="Select Date Time">
+                            <input type="datetime-local" class="form-control" id="DeliveryTime" placeholder="Select Date Time" onchange="selectTime()">
                             <span class="h5 col-12">Select a store/branch</span>
                             <select class="form-select" id="select-branch" aria-label="Default select example"></select>
                         </div>
@@ -121,14 +121,14 @@
                         <div class="row">
                             <span class="h5 col-12">Select who the order is for.*</span>
                             <input type="radio" class="btn-check col-4 me-1" name="orderfor" id="formyself" value="" autocomplete="off" checked>
-                            <label class="btn btn-secondary col-4 me-1" for="formyself">For myself</label>
+                            <label class="btn col-4 me-1" for="formyself">For myself</label>
                             <input type="radio" class="btn-check col-4 me-1" name="orderfor" id="agift" value="" autocomplete="off">
-                            <label class="btn btn-secondary col-4 me-1" for="agift">A gift for someone</label>
+                            <label class="btn col-4 me-1" for="agift">A gift for someone</label>
                             <span class="h5 col-12">Select when you would like this order.*</span>
                             <input type="radio" class="btn-check col-4 me-1" name="deliverdate" id="delnow" value="Within 40-90 minutes" autocomplete="off" checked onclick="delivTimeFunc()">
-                            <label class="btn btn-secondary col-4 me-1" for="delnow" data-toggle="tooltip" data-placement="top" title="Within 40-90 minutes">Deliver now</label>
+                            <label class="btn col-4 me-1" for="delnow" data-toggle="tooltip" data-placement="top" title="Within 40-90 minutes">Deliver now</label>
                             <input type="radio" class="btn-check col-4 me-1" name="deliverdate" id="delater" value="For Atleast 2 hours" autocomplete="off" onclick="delivTimeFunc()">
-                            <label class="btn btn-secondary col-4 me-1" for="delater" data-toggle="tooltip" data-placement="top" title="Atleast 2 hours">Deliver later</label>
+                            <label class="btn col-4 me-1" for="delater" data-toggle="tooltip" data-placement="top" title="Atleast 2 hours">Deliver later</label>
                             <span class="h5 col-12">Fill in the address with the street, barangay, subdivision, city/municipality.*</span>
                             <div class="form-floating mb-3">
                                 <input type="text" class="form-control" id="addressInput" placeholder="name@example.com">
@@ -149,7 +149,7 @@
                 </div>
                 <div class="d-flex flex-column mx-sm-5">
                     <div class="d-flex justify-content-end my-sm-3">
-                        <button class="btn btn-primary col-3" id="btn-trans-type" onclick="btnTransacFunc()" data-bs-toggle="modal" data-bs-target="#infoModal">
+                        <button class="btn col-3" id="btn-trans-type" onclick="btnTransacFunc()" data-bs-toggle="modal" data-bs-target="#infoModal">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">Proceed <i class="fa-regular fa-circle-check ms-sm-1"></i></div>
                         </button>
                     </div>
@@ -195,7 +195,7 @@
                 </div>
                 <div class="d-flex flex-column mx-sm-5">
                     <div class="d-flex justify-content-end my-sm-3">
-                        <button class="btn btn-primary col-3" id="btn-info-type" data-bs-toggle="modal" data-bs-target="#paymentModal">
+                        <button class="btn col-3" id="btn-info-type" data-bs-toggle="modal" data-bs-target="#paymentModal">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">Proceed <i class="fa-regular fa-circle-check ms-sm-1"></i></div>
                         </button>
                     </div>
@@ -264,7 +264,7 @@
                 </div>
                 <div class="d-flex flex-column mx-sm-5">
                     <div class="d-flex justify-content-end my-sm-3">
-                        <button class="btn btn-primary col-3" id="btn-payment" data-bs-toggle="modal" data-bs-target="#tyModal" onclick="tyFunc()">
+                        <button class="btn col-3" id="btn-payment" data-bs-toggle="modal" data-bs-target="#tyModal" onclick="tyFunc()">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">Proceed <i class="fa-regular fa-circle-check ms-sm-1"></i></div>
                         </button>
                     </div>
@@ -325,7 +325,7 @@
                 </div>
                 <div class="d-flex flex-column mx-sm-5">
                     <div class="d-flex justify-content-end">
-                        <button class="btn btn-primary col-3" id="btn-ty" data-bs-dismiss="modal" aria-label="Close" onclick="tytyFunc()">
+                        <button class="btn col-3" id="btn-ty" data-bs-dismiss="modal" aria-label="Close" onclick="tytyFunc()">
                             <div class="d-flex flex-column flex-sm-row align-items-center justify-content-center">Proceed <i class="fa-regular fa-circle-check ms-sm-1"></i></div>
                         </button>
                     </div>
@@ -381,8 +381,8 @@
                                         <div class="h5 text-center text-sm-start">Caffe Americano</div>
                                         <span class="d-block mb-3">A milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top</span>
                                         <span class="col-4">Size option: </span>
-                                        <button class="btn-primary col-3">Regular</button>
-                                        <button class="btn-primary col-3">Large</button>
+                                        <button class= col-3">Regular</button>
+                                        <button class= col-3">Large</button>
                                         <div class="d-flex justify-content-between">
                                             <span>P130</span>
                                             <span>+ 2 -</span>
@@ -392,8 +392,8 @@
                             </div>
                         </div>
                         <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                            <button type="button" class="btn btn-primary">Save changes</button>
+                            <button type="button" class="btn" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn">Save changes</button>
                         </div>
                     </div>
                 </div>

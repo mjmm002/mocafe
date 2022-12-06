@@ -780,8 +780,79 @@ border-bottom: solid;
     }
 
 }
+#subscribe{
+    /* background-color: aqua;  */
+    width: 230px;
+    border: none;
+    border-bottom: solid thin;
+    background-color:  rgb(31, 33, 34);
+    color: rgb(240, 241, 240);
+}
+.thankUPage{
+    background-image: url(https://www.wallpaperflare.com/static/2/200/840/coffee-grain-background-texture-wallpaper.jpg);
+    background-position:top;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
 
-*{
+.thankUPage-content{
+    background-color: rgba(255, 255, 255,0.5);
+    width: 100%;
+    height: 100vh;
+    
+}
+
+#thankYouMessage{
+    background-image: url(https://static7.depositphotos.com/1011833/721/i/450/depositphotos_7210173-stock-photo-coffee-cup-on-burlap-background.jpg);
+    background-position:center;
+    background-size: cover;
+    background-color: rgb(53, 78, 78);
+    width: 450px;
+    height: 470px;
+    color: aliceblue;
+    
+}
+
+#thankYouMessage h3{
+    width:300px;
+    color: black;
+    font-weight: bolder;
+    font-family: 'Roboto Slab', serif; 
+}
+
+#thankYouMessage p{
+    width:300px;
+    color: black;
+    font-size: 15px;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+    
+#order-summary{
+    background-color:  rgb(31, 33, 34);
+    color: rgb(240, 241, 240);
+    width: 450px;
+    height: 470px; 
+}
+
+#order-summary p{
+    font-size: smaller;
+    font-family: 'Roboto Condensed', sans-serif;
+    }
+
+
+#order-summary h6{
+    font-family: 'Roboto Condensed', sans-serif;
+    text-transform: uppercase;
+}
+
+#order-summary span{
+    color: gray;
+}
+
+
+
+    *{
     box-sizing: border-box;
 }
 
@@ -862,76 +933,20 @@ border-bottom: solid;
 #delcharge{
     display: flex;
 }
-    #subscribe{
-        /* background-color: aqua;  */
-        width: 230px;
-        border: none;
-        border-bottom: solid thin;
-        background-color:  rgb(31, 33, 34);
-        color: rgb(240, 241, 240);
-    }
-    .thankUPage{
-        background-image: url(https://www.wallpaperflare.com/static/2/200/840/coffee-grain-background-texture-wallpaper.jpg);
-        background-position:top;
-        background-size: cover;
-        width: 100%;
-        height: 100vh;
-    }
-    
-    .thankUPage-content{
-        background-color: rgba(255, 255, 255,0.5);
-        width: 100%;
-        height: 100vh;
-        
-    }
-    
-    #thankYouMessage{
-        background-image: url(https://static7.depositphotos.com/1011833/721/i/450/depositphotos_7210173-stock-photo-coffee-cup-on-burlap-background.jpg);
-        background-position:center;
-        background-size: cover;
-        background-color: rgb(53, 78, 78);
-        width: 450px;
-        height: 470px;
-        color: aliceblue;
-       
-    }
-    
-    #thankYouMessage h3{
-       width:300px;
-       color: black;
-       font-weight: bolder;
-       font-family: 'Roboto Slab', serif; 
-    }
-    
-    #thankYouMessage p{
-        width:300px;
-        color: black;
-        font-size: 15px;
-        font-family: 'Roboto Condensed', sans-serif;
-    }
-     
-    #order-summary{
-        background-color:  rgb(31, 33, 34);
-        color: rgb(240, 241, 240);
-        width: 450px;
-        height: 470px; 
-    }
-    
-    #order-summary p{
-        font-size: smaller;
-        font-family: 'Roboto Condensed', sans-serif;
-     }
-    
-    
-    #order-summary h6{
-       font-family: 'Roboto Condensed', sans-serif;
-       text-transform: uppercase;
-    }
-    
-    #order-summary span{
-      color: gray;
-     }
-    
+
+.modal-content{
+    background-color: rgb(31, 33, 34);
+    color: white;
+}
+.modal-content .btn, .btn-add2cart{
+    background-color: rgb(140, 98, 57) !important;
+    color: white;
+}
+
+.modal-content label{
+    color: black;
+}
+
 
 
 

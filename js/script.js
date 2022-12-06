@@ -71,9 +71,9 @@ for (let i of allBank){
     bankOption.value = i
     bankSelector.appendChild(bankOption)
 }
-const Mocafe = {"menu": [hotCoffeeList, icedCoffeeList, foodMenuList], "list": [hotCoffee, icedCoffee, foodMenu], "x":[hot, iced, food] }
+const Mocafe = {"menu": [hotCoffeeList, icedCoffeeList, foodMenuList], "list": [hotCoffee, icedCoffee, foodMenu], "x":[hot, iced, food], "y":["Hot Coffee", "Iced Coffee", "Pastries"] }
 
-const menuOption = (wew, cof, x) => {
+const menuOption = (wew, cof, x, y) => {
     for (let i in cof) {
         wew = document.querySelector(`.menu-container .${x}`)
         wew.insertAdjacentHTML("beforeend", `
@@ -92,8 +92,8 @@ const menuOption = (wew, cof, x) => {
         <div class="modal-dialog modal-lg modal-fullscreen-sm-down">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h1 class="modal-title fs-5" id="${x}Label">Modal title</h1>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    <h1 class="modal-title fs-5" id="${x}Label">${y}</h1>
+                    <button type="button" class="btn" data-bs-dismiss="modal" aria-label="Close"><i class="fa-solid fa-x"></i></button>
                 </div>
                 <div class="modal-body">
                     <div class="d-flex flex-column justify-content-center">
@@ -106,16 +106,18 @@ const menuOption = (wew, cof, x) => {
                                 <span class="d-block mb-3">A milk coffee that is a made up of one or two shots of espresso, steamed milk and a final, thin layer of frothed milk on top</span>
                                 <span class="col-4">Size option: </span>
                                 <input type="radio" class="btn-check btn-size" name="options${i}" id="option${x}${i}" value="${cof[i].price[0]}" autocomplete="off" checked>
-                                <label class="btn btn-secondary" for="option${x}${i}">${cof[i].size[0]}</label>
+                                <label class="btn" for="option${x}${i}">${cof[i].size[0]}</label>
                                 <input type="radio" class="btn-check btn-size" name="options${i}" id="${x}${i}${i}" value="${cof[i].price[1]}" autocomplete="off">
-                                <label class="btn btn-secondary" for="${x}${i}${i}">${cof[i].size[1]}</label>
-                                <div class="d-flex justify-content-between d-block col-12 coffee-priceList">
-                                    <div class="coffee-price" value="${cof[i].price[0]}">${cof[i].price[0].toFixed(2)}</div>
+                                <label class="btn" for="${x}${i}${i}">${cof[i].size[1]}</label>
+                                <div class="d-flex justify-content-between d-block col-12 coffee-priceList my-2">
+                                    <div class="d-flex">Price: 
+                                        <div class="coffee-price ms-2" value="${cof[i].price[0]}">${cof[i].price[0].toFixed(2)}</div>
+                                    </div>
                                     <div class="coffee-size d-none">${cof[i].size[0]}</div>
                                 </div>
-                                <div class="d-flex justify-content-between col-sm-10">
-                                    <span>Quantity: </span>
-                                    <div>
+                                <div class="d-flex justify-content-start">
+                                    <p class="mt-1">Quantity: </p>
+                                    <div class="ms-4">
                                         <button type="button" class="btn btn-secondary text-center" onclick="quantUpdate(-1)">-</button>
                                         <input type="number" class="quant-update col-2" value="1" onChange="quantChange()">
                                         <button type="button" class="btn btn-secondary text-center" onclick="quantUpdate(1)">+</button>
@@ -126,7 +128,7 @@ const menuOption = (wew, cof, x) => {
                     </div>
                 </div>
                 <div class="modal-footer row">
-                    <button type="button" class="btn btn-primary col-12 col-sm-6 btn-add2cart">Add to Cart</button>
+                    <button type="button" class="btn col-12 col-sm-6 btn-add2cart">Add to Cart</button>
                 </div>
             </div>
         </div>
@@ -135,8 +137,8 @@ const menuOption = (wew, cof, x) => {
     }    
 }
 
-for (let i in Mocafe.menu, Mocafe.list, Mocafe.x){
-    menuOption(Mocafe.menu[i], Mocafe.list[i], Mocafe.x[i])
+for (let i in Mocafe.menu, Mocafe.list, Mocafe.x, Mocafe.y){
+    menuOption(Mocafe.menu[i], Mocafe.list[i], Mocafe.x[i], Mocafe.y[i])
 }
 
 function quantUpdate(num){
@@ -385,7 +387,8 @@ function pickupFunc(){
     orderBtnFunc(delivBtn, pickupBtn)
     spanOrderType = `Ordering for pick-up to `
     console.log(spanOrderType)
-    btnTransact.disabled = false
+    btnTransact.disabled = true
+    
 }
 function delivFunc(){
     deliv.style.display = "flex"
@@ -401,6 +404,10 @@ function delivTimeFunc(){
 }
 function pickupLocFunc(){
     pickupLoc = event.target.value
+    btnTransact.disabled = false
+}
+function selectTime(){
+    btnTransact.disabled = false
 }
 
 const btnTransact = document.querySelector("#btn-trans-type")
