@@ -34,7 +34,7 @@ const hotCoffee = [
 ]
 
 const icedCoffee = [
-    {"name": "Iced Caffe Americano", "price": [100.00, 120.00], "size":["Regular", "Large"], "pic": "iced1.png"},
+    {"name": "Iced Caffe Americano", "price": [100.00, 120.00], "size":["Regular", "Large"], "pic": "Iced1.png"},
     {"name": "Iced Caffe Latte", "price": [100.00, 120.00], "size":["Regular", "Large"], "pic": "iced2.png"},
     {"name": "Iced Cappuccino", "price": [100.00, 120.00], "size":["Regular", "Large"], "pic": "iced3.png"},
     {"name": "Iced Caramel Machiato", "price": [100.00, 120.00], "size":["Regular", "Large"], "pic": "iced4.png"},
